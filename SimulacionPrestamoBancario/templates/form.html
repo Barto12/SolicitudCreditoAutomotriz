@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Préstamo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Préstamo</h1>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Nombre Completo" required>
+            <input type="text" name="address" placeholder="Dirección" required>
+            <input type="text" name="state" placeholder="Estado" required>
+            <input type="text" name="country" placeholder="País" required>
+            <input type="text" name="postal_code" placeholder="Código Postal" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="number" name="income" placeholder="Ingresos" required>
+            <button type="submit">Solicitar Préstamo</button>
+        </form>
+    </div>
+</body>
+</html>
